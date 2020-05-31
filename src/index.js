@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import * as tf from '@tensorflow/tfjs';
 import "./styles.css";
 tf.setBackend('webgl');
-let backend = new tf.webgl.MathBackendWebGL()
 
 const pascalvoc = [[ 0,0,0 ],[ 128,0,0 ],[ 0,128,0 ],
                     [ 128,128,0 ],[ 0,0,128 ],[ 128,0,128 ],
@@ -118,10 +117,6 @@ class App extends React.Component {
     const ctx = this.canvasRef.current.getContext("2d");
     ctx.scale(1.5, 1.5);
     ctx.putImageData(out, 520, 60);
-    console.log(tf.memory())
-    //console.log('  Tensors:', tf.memory().numTensors);
-    backend.dispose()
-    backend = new tf.webgl.MathBackendWebGL()
   };
 
   render() {
@@ -152,4 +147,3 @@ class App extends React.Component {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-
