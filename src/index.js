@@ -60,12 +60,14 @@ class App extends React.Component {
   }
 
   detectFrame = (video, model) => {
+      tf.engine().startScope();
       const predictions = model.predict(this.process_input(video));
       this.renderPredictions(predictions);
       predictions.dispose();
       requestAnimationFrame(() => {
         this.detectFrame(video, model);
       });
+      tf.engine().endScope();
   };
 
   process_input(video_frame){
