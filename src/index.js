@@ -60,12 +60,13 @@ class App extends React.Component {
   }
 
   detectFrame = (video, model) => {
+      tf.engine().startScope();
       const predictions = model.predict(this.process_input(video));
       this.renderPredictions(predictions);
-      predictions.dispose();
       requestAnimationFrame(() => {
         this.detectFrame(video, model);
       });
+      tf.engine().endScope();
   };
 
   process_input(video_frame){
@@ -75,12 +76,6 @@ class App extends React.Component {
     const std = tf.tensor3d([0.229, 0.224, 0.225], [1,1,3]);
     const normalised = img.div(scale).sub(mean).div(std);
     const batched = normalised.transpose([2,0,1]).expandDims();
-    img.dispose();
-    scale.dispose();
-    mean.dispose();
-    std.dispose();
-    normalised.dispose();
-    batched.dispose();
     return batched;
   };
     renderPredictions = async (predictions) => {
