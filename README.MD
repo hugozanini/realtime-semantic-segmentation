@@ -1,6 +1,6 @@
 
 
-# Realtime instance segmentation in the browser
+# Realtime Semantic Segmentation in the browser
 
   
 
