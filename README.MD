@@ -41,7 +41,7 @@ If you are using  `npm`:
 	npm install
 	npm start
 
-To test the project just go to  [http://localhost:3000/] and the application will be running there.
+To test the project just go to  http://localhost:3000/ and the application will be running there.
 
 ### References
 [1] Romera-Paredes, Bernardino, and Philip Hilaire Sean Torr. “Recurrent instance segmentation.” _European conference on computer vision_. Springer, Cham, 2016.
