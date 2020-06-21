@@ -1,5 +1,6 @@
 
 
+
 # Realtime Semantic Segmentation in the browser
 
   
@@ -28,7 +29,7 @@ Once you have the program installed, go to the weights folder, run the command b
 
 `http-server -c1 --cors .`
 
-To start the application run the command npm  `npm start` and it will be available at [http://localhost:3000/](http://localhost:3000/).
+To start the application run the command to`npm install` install the required packages  and  `npm start` to make the project  available at [http://localhost:3000/](http://localhost:3000/).
 
 ### References
 [1] Romera-Paredes, Bernardino, and Philip Hilaire Sean Torr. “Recurrent instance segmentation.” _European conference on computer vision_. Springer, Cham, 2016.
