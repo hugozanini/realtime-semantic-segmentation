@@ -3,7 +3,7 @@
 
 # Realtime Semantic Segmentation in the browser
 
-  
+ To a more detailed description about this project, [check my article](https://lnkd.in/dFm95MJ) at Towards Data Science.
 
 This project uses TensorFlow.js to perform realtime instance segmentation in the browser using [RefineNet](https://arxiv.org/pdf/1611.06612.pdf). Many thanks to  [Bernardo de Oliveira](https://github.com/bernieOllie), that help me to fix some bugs in the code, and [Vladimir Nekrasov](https://drsleep.github.io/) that provided the *.js weights* of the [Light-Weight RefineNet](http://bmvc2018.org/contents/papers/0494.pdf) - a more compact implementation of RefineNet, suitable for tasks requiring real-time performance.
 
