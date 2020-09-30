@@ -23,7 +23,7 @@ Tensorflow.js models have to be served through an URL to be loaded in javascript
 
 The [http-server](https://www.npmjs.com/package/http-server) can be installed using the following command:
 
-`npm-install http-server -g`
+`npm install http-server -g`
 
 Once you have the program installed, go to the weights folder, run the command below and the model you be available at http://127.0.0.1:8080.
 
