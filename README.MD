@@ -13,7 +13,7 @@ This project uses TensorFlow.js to perform realtime instance segmentation in the
   
 
 ### Getting started
-Tensorflow.js models have to be served through an URL to be loaded in javascript. The  Refine Net model is based on a main JSON file and shared weights files in a binary format. The idea is to create an HTTP server that will make the model available in a URL allowing requests and be thread as REST API. When loading the model, the TensorFlow.js will do the following requests:
+Tensorflow.js models have to be served through an URL to be loaded in javascript. The  Refine Net model is based on a main JSON file and shared weights files in a binary format. The idea is to create an HTTP server that will make the model available in a URL allowing requests and be treated as REST API. When loading the model, the TensorFlow.js will do the following requests:
 
     GET /model.json
     GET /group1-shard1of4
