@@ -21,7 +21,7 @@ const pascalvoc = [[ 0,0,0 ],[ 128,0,0 ],[ 0,128,0 ],
 
 
 async function load_model() {
-  const model = await tf.loadLayersModel("http://127.0.0.1:8080/model.json");
+  const model = await tf.loadLayersModel("https://raw.githubusercontent.com/hugozanini/realtime-semantic-segmentation/master/weights/model.json");
   return model;
 }
 
