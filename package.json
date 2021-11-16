@@ -9,7 +9,7 @@
     "@tensorflow/tfjs": "^1.7.4",
     "@tensorflow/tfjs-node": "^1.7.4",
     "array-to-image": "^1.0.0",
-    "aws-sdk": "^2.678.0",
+    "aws-sdk": "^2.814.0",
     "node-gyp": "^6.1.0",
     "node-pre-gyp": "^0.14.0",
     "react": "16.5.2",
