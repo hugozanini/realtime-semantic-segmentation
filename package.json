@@ -15,7 +15,7 @@
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-magic-dropzone": "1.0.1",
-    "react-scripts": "2.0.3",
+    "react-scripts": "5.0.1",
     "webgl": "0.0.7"
   },
   "devDependencies": {},
